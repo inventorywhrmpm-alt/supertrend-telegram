@@ -3,7 +3,7 @@ name: Daily Supertrend Screener
 on:
   schedule:
     # 09:15 UTC = 16:15 WIB (Senin - Jumat)
-    - cron: "15 9 * * 1-5"
+    - cron: "0 2-9 * * 1-5"
   workflow_dispatch:
 
 permissions:
