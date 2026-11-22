@@ -127,7 +127,7 @@ def format_message(signals_df: pd.DataFrame, total_selected: int, period: int, m
 def main() -> None:
     bot_token = os.getenv("TELEGRAM_BOT_TOKEN", "").strip()
     chat_id = os.getenv("TELEGRAM_CHAT_ID", "").strip()
-    default_10_stocks = "BBCA,BBRI,BMRI,TLKM,ASII,ANTM,MDKA,ADRO,PGAS,SCMA"
+    default_10_stocks = "BRMS,BBRI,BUMI,ERAL,DOOH,MBMA,CDIA,INET,SCMA"
     raw_watchlist = os.getenv("WATCHLIST", default_10_stocks)
     atr_period = int(os.getenv("ATR_PERIOD", "10"))
     atr_mult = float(os.getenv("ATR_MULTIPLIER", "1.0"))
